@@ -1,0 +1,11 @@
+dependencies {
+	api project(":modules:com.practice.service:com.practice.service-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../com.practice.service-api/src/main/java"
+}
+
+group = "com.practice.service"
