@@ -1,5 +1,4 @@
-package com.java.constructor.practice;
-
+package Constructor;
 /*
  * What is a constructor?
  * 1.Constructor is a method use to initialize the object of  object  -- refer line no 1
@@ -24,24 +23,43 @@ public class ConstructorPractice {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Class A Called");
-		MyConstructorCall call=new MyConstructorCall("Vipin Singh Kalra","9760370995");
+		DefaultConstructorExample constructorExample = new DefaultConstructorExample();// this is a default constructor
+																						// of class Default constructor
+																						// class}
+		/*
+		 * 
+		 * default constructor/non parameterised constructor
+		 * 
+		 */
 	}
 
 }
 
-class MyConstructorCall {
-	String name;
-	String number;
-	public MyConstructorCall(String name, String mobNum) {
+class DefaultConstructorExample {
+	public static void methodeDemo() {
+	}
+
+}
+
+class ParameterisedConstructorExample {
+	 static String name;
+	int mobileNum=0;
+
+	/*
+	 * 
+	 *  parameterised 
+	 *  constructor
+	 *  example */
+	public ParameterisedConstructorExample(String name) {
 		this.name=name;
-		this.number=mobNum;
-		System.out.println("name---"+name);
-		System.out.println("number---"+number);
-	}
-	
-	
-}
+		this.mobileNum=1;
 
-class DemoPracticeConstructor {
- MyConstructorCall call=new MyConstructorCall("","");
+	}
+	public static void main() {
+		ParameterisedConstructorExample constructorExample=new ParameterisedConstructorExample("Vipin");
+		constructorExample.name="Singh";
+		System.out.println("main----"+name);
+
+	}
+
 }
