@@ -9,7 +9,7 @@ package Constructor;
 public class ConstructorCallThroughThisKeyWord {
 
 	public ConstructorCallThroughThisKeyWord() {
-		this("vipin", "29", "Brahmpuri",976037099);
+		this("vipin", "29", "Brahmpuri", 976037099);
 	}
 
 	public ConstructorCallThroughThisKeyWord(String name, String age, String address) {
@@ -22,7 +22,7 @@ public class ConstructorCallThroughThisKeyWord {
 		System.out.println("Name---------" + name);
 		System.out.println("Age---------" + age);
 		System.out.println("Address---------" + address);
-		System.out.println("Address---------" + mobNUmber);
+		System.out.println("Mobile Number---------" + mobNUmber);
 	}
 
 	public static void main(String[] args) {
